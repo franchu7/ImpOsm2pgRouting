@@ -11,9 +11,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/imposm
-RUN wget https://github.com/omniscale/imposm3/releases/download/v0.10.0/imposm-0.10.0-linux-x86-64.tar.gz && \
-    tar --strip 1 -xvzf imposm-0.10.0-linux-x86-64.tar.gz && \
-    rm imposm-0.10.0-linux-x86-64.tar.gz
+RUN wget https://github.com/omniscale/imposm3/releases/download/v0.14.0/imposm-0.14.0-linux-x86-64.tar.gz && \
+    tar --strip 1 -xvzf imposm-0.14.0-linux-x86-64.tar.gz && \
+    rm imposm-0.14.0-linux-x86-64.tar.gz
 
 ENV IMPORT_DIR=/import \
     IMPOSM_CACHE_DIR=/cache \
